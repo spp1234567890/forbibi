@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .options {
+            margin-top: 30px;
+        }
+        .btn {
+            background: #ff758c;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+        }
+        .btn:hover {
+            background: #ff5277;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="your-song-url.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <h1>Happy Valentine's Day, My Love! ❤️</h1>
+        <p>Choose an option below:</p>
+        <div class="options">
+            <button class="btn" onclick="showMessage('loveLetter')">Love Letter</button>
+            <button class="btn" onclick="showMessage('photoMemories')">Photo Memories</button>
+            <button class="btn" onclick="showMessage('anniversaryDate')">Anniversary Date</button>
+        </div>
+        <div id="message" style="margin-top: 20px; font-size: 1.5em;"></div>
+    </div>
+    <script>
+        function showMessage(option) {
+            let message = document.getElementById('message');
+            if (option === 'loveLetter') {
+                message.innerHTML = "<p>My love, you mean the world to me. Happy Valentine's Day! ❤️</p>";
+            } else if (option === 'photoMemories') {
+                message.innerHTML = "<p>Here are our best moments together! (You can add a gallery here) 📸</p>";
+            } else if (option === 'anniversaryDate') {
+                message.innerHTML = "<p>Our anniversary is on [Insert Date]! Forever together! 💑</p>";
+            }
+        }
+    </script>
+</body>
+</html>
